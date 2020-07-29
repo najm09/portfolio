@@ -24168,7 +24168,7 @@ var SOCIAL_PROFILES = [{
   image: _github_icon.default
 }, {
   id: 3,
-  link: '#',
+  link: 'https://www.linkedin.com/in/fakhra-najm-6551a51b3/',
   image: _linkedin_icon.default
 }, {
   id: 4,
@@ -24499,7 +24499,9 @@ var Joke = function Joke(_ref) {
   var joke = _ref.joke;
   var setup = joke.setup,
       punchline = joke.punchline;
-  return /*#__PURE__*/_react.default.createElement("p", null, setup, /*#__PURE__*/_react.default.createElement("em", null, punchline));
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "panel panel-info"
+  }, /*#__PURE__*/_react.default.createElement("h3", null, setup, /*#__PURE__*/_react.default.createElement("em", null, punchline)));
 };
 
 var Jokes = /*#__PURE__*/function (_Component) {
@@ -24556,11 +24558,14 @@ var Jokes = /*#__PURE__*/function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Highlighted Joke"), /*#__PURE__*/_react.default.createElement(Joke, {
+      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("pre", {
+        className: "bg bg-primary"
+      }, /*#__PURE__*/_react.default.createElement("h1", null, "Highlighted jokes")), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(Joke, {
         joke: this.state.joke
-      }), /*#__PURE__*/_react.default.createElement("h3", null, "Want more jokes"), /*#__PURE__*/_react.default.createElement("button", {
-        onClick: this.fetchJokes
-      }, "clickme"), this.state.jokes.map(function (joke) {
+      }), /*#__PURE__*/_react.default.createElement("h2", null, "Want more jokes  ", /*#__PURE__*/_react.default.createElement("button", {
+        onClick: this.fetchJokes,
+        className: " glyphicon glyphicon-search btn btn-info"
+      })), this.state.jokes.map(function (joke) {
         return /*#__PURE__*/_react.default.createElement(Joke, {
           key: joke.id,
           joke: joke
@@ -30523,7 +30528,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34743" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40365" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

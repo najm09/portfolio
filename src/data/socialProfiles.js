@@ -18,7 +18,7 @@ const SOCIAL_PROFILES = [
 
   {
     id : 3,
-    link: '#',
+    link: 'https://www.linkedin.com/in/fakhra-najm-6551a51b3/',
     image: linkedinIcon
   },
 

@@ -2,7 +2,7 @@ import React,  {Component} from 'react';
 
 const Joke = ({joke}) =>{
   const {setup, punchline} = joke;
-  return <p>{setup}<em>{punchline}</em></p>
+  return <div className= 'panel panel-info'><h3>{setup}<em>{punchline}</em></h3></div>
 }
 
 class Jokes extends Component{
@@ -27,10 +27,11 @@ class Jokes extends Component{
     return(
       <div>
         <div>
-          <h1>Highlighted Joke</h1>
+          <pre className='bg bg-primary'><h1>Highlighted jokes</h1></pre>
+          <br/>
           <Joke joke = {this.state.joke}/>
-          <h3>Want more jokes</h3>
-          <button onClick = {this.fetchJokes}>clickme</button>
+          <h2>Want more jokes  <button onClick = {this.fetchJokes}
+          className=' glyphicon glyphicon-search btn btn-info'></button></h2>
           {this.state.jokes.map(joke =>(<Joke key = {joke.id} joke = {joke}/>))}
         </div>
       </div>
