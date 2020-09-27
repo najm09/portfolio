@@ -3,33 +3,33 @@
   * Email : fnajm09@gmail.com
 */
 
-import project1 from '../assets/project1.png';
-import project2 from '../assets/project2.png';
-import project3 from '../assets/project3.png';
+import Cup from '../assets/cup.png';
+import Todo from '../assets/todoTracker.png';
+import Game from '../assets/Game.png';
 
 const PROJECTS = [
   {
     id : 1,
-    title: 'Example React Application',
-    description: 'A react app that I built, involving JS and core webdev course',
-    link: 'https://github.com/najm09/react-bootcamp',
-    image: project1
+    title: 'PerfectCup',
+    description: 'Simple Login Logout Php Web Application, involving JS and core webdev course!',
+    link: 'https://github.com/najm09/perfectCup',
+    image: Cup
   },
 
   {
     id : 2,
-    title: 'MY API',
-    description: 'A REST API that I built from scratch with GET and POST requests!',
-    link: 'https://github.com/najm09/react-bootcamp',
-    image: project2
+    title: 'TodoTRacker',
+    description: 'A Web Application using Javascript to Track Todos!',
+    link: 'https://github.com/najm09/Javascript/tree/master/Todo_App',
+    image: Todo
   },
 
   {
     id : 3,
-    title: 'Example React Application',
-    description: 'Final project for Operating system course',
-    link: 'https://github.com/najm09/react-bootcamp',
-    image: project3
+    title: 'MemoryGame',
+    description: 'A Game of Matching Cards!',
+    link: 'https://github.com/najm09/Javascript/tree/master/memoryGame',
+    image: Game
   },
 ];
 

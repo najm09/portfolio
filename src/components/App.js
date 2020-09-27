@@ -23,24 +23,21 @@ class App extends Component {
         <Title/>
         <p>Department of Electrical Engineering</p>
         <p>Faculty of Engineering and Technology</p>
-        <p>Jamia Millia Islamia </p>
+        <p>Jamia Millia Islamia New Delhi </p>
         {
           this.state.displayBio ?( 
           <div>
-            <br/>
             <p>BirthPlace: Muzaffarpur Bihar</p>
             <p>Studied at Hazrat Ali Academy</p>
             <p>Studied at Abeda High School(+2) Muzaffarpur</p>
             <p>
-              <span style = {{color:'red'}}> Member of</span>
-              <span style = {{color:'blue'}}> IEEE</span>
-              <span style = {{color:'green', font:'bold'}}> Jamia Millia Islamia</span>
+              <span> Member of IEEE Jamia Millia Islamia</span>
             </p>
-            <button onClick={this.toggleBio} className = "btn-warning">read Less</button>
+            <button onClick={this.toggleBio} className = "btn btn-default">read Less</button>
           </div> ):
           (
           <div>
-            <button onClick={this.toggleBio} className = "btn-primary">read More</button>
+            <button onClick={this.toggleBio} className = " btn btn-default">read More</button>
           </div>
           )
         }

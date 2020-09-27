@@ -24033,12 +24033,12 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"assets/project1.png":[function(require,module,exports) {
-module.exports = "/project1.0e13da1c.png";
-},{}],"assets/project2.png":[function(require,module,exports) {
-module.exports = "/project2.d48872d8.png";
-},{}],"assets/project3.png":[function(require,module,exports) {
-module.exports = "/project3.592b562e.png";
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"assets/cup.png":[function(require,module,exports) {
+module.exports = "/cup.1fedc075.png";
+},{}],"assets/todoTracker.png":[function(require,module,exports) {
+module.exports = "/todoTracker.c52fb7e3.png";
+},{}],"assets/Game.png":[function(require,module,exports) {
+module.exports = "/Game.79fd02ad.png";
 },{}],"data/projects.js":[function(require,module,exports) {
 "use strict";
 
@@ -24047,11 +24047,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _project = _interopRequireDefault(require("../assets/project1.png"));
+var _cup = _interopRequireDefault(require("../assets/cup.png"));
 
-var _project2 = _interopRequireDefault(require("../assets/project2.png"));
+var _todoTracker = _interopRequireDefault(require("../assets/todoTracker.png"));
 
-var _project3 = _interopRequireDefault(require("../assets/project3.png"));
+var _Game = _interopRequireDefault(require("../assets/Game.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24061,26 +24061,26 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 */
 var PROJECTS = [{
   id: 1,
-  title: 'Example React Application',
-  description: 'A react app that I built, involving JS and core webdev course',
-  link: 'https://github.com/najm09/react-bootcamp',
-  image: _project.default
+  title: 'PerfectCup',
+  description: 'Simple Login Logout Php Web Application, involving JS and core webdev course!',
+  link: 'https://github.com/najm09/perfectCup',
+  image: _cup.default
 }, {
   id: 2,
-  title: 'MY API',
-  description: 'A REST API that I built from scratch with GET and POST requests!',
-  link: 'https://github.com/najm09/react-bootcamp',
-  image: _project2.default
+  title: 'TodoTRacker',
+  description: 'A Web Application using Javascript to Track Todos!',
+  link: 'https://github.com/najm09/Javascript/tree/master/Todo_App',
+  image: _todoTracker.default
 }, {
   id: 3,
-  title: 'Example React Application',
-  description: 'Final project for Operating system course',
-  link: 'https://github.com/najm09/react-bootcamp',
-  image: _project3.default
+  title: 'MemoryGame',
+  description: 'A Game of Matching Cards!',
+  link: 'https://github.com/najm09/Javascript/tree/master/memoryGame',
+  image: _Game.default
 }];
 var _default = PROJECTS;
 exports.default = _default;
-},{"../assets/project1.png":"assets/project1.png","../assets/project2.png":"assets/project2.png","../assets/project3.png":"assets/project3.png"}],"components/Projects.js":[function(require,module,exports) {
+},{"../assets/cup.png":"assets/cup.png","../assets/todoTracker.png":"assets/todoTracker.png","../assets/Game.png":"assets/Game.png"}],"components/Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -24113,10 +24113,16 @@ var Project = function Project(props) {
       width: 200,
       height: 120
     }
-  }), /*#__PURE__*/_react.default.createElement("p", null, description), /*#__PURE__*/_react.default.createElement("a", {
+  }), /*#__PURE__*/_react.default.createElement("p", null, description), /*#__PURE__*/_react.default.createElement("div", {
+    style: {
+      marginRight: 10,
+      fontSize: 10,
+      fontWeight: 'bold'
+    }
+  }, /*#__PURE__*/_react.default.createElement("a", {
     href: link,
     target: "blank"
-  }, link));
+  }, link)));
 };
 /* inline return :const Project = () => (------)*/
 
@@ -24429,25 +24435,12 @@ var App = /*#__PURE__*/function (_Component) {
         src: _profile.default,
         alt: "profile",
         className: "profile"
-      }), /*#__PURE__*/_react.default.createElement("h1", null, "Fakhra Najm"), /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement("p", null, "Department of Electrical Engineering"), /*#__PURE__*/_react.default.createElement("p", null, "Faculty of Engineering and Technology"), /*#__PURE__*/_react.default.createElement("p", null, "Jamia Millia Islamia "), this.state.displayBio ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("p", null, "BirthPlace: Muzaffarpur Bihar"), /*#__PURE__*/_react.default.createElement("p", null, "Studied at Hazrat Ali Academy"), /*#__PURE__*/_react.default.createElement("p", null, "Studied at Abeda High School(+2) Muzaffarpur"), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("span", {
-        style: {
-          color: 'red'
-        }
-      }, " Member of"), /*#__PURE__*/_react.default.createElement("span", {
-        style: {
-          color: 'blue'
-        }
-      }, " IEEE"), /*#__PURE__*/_react.default.createElement("span", {
-        style: {
-          color: 'green',
-          font: 'bold'
-        }
-      }, " Jamia Millia Islamia")), /*#__PURE__*/_react.default.createElement("button", {
+      }), /*#__PURE__*/_react.default.createElement("h1", null, "Fakhra Najm"), /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement("p", null, "Department of Electrical Engineering"), /*#__PURE__*/_react.default.createElement("p", null, "Faculty of Engineering and Technology"), /*#__PURE__*/_react.default.createElement("p", null, "Jamia Millia Islamia New Delhi "), this.state.displayBio ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, "BirthPlace: Muzaffarpur Bihar"), /*#__PURE__*/_react.default.createElement("p", null, "Studied at Hazrat Ali Academy"), /*#__PURE__*/_react.default.createElement("p", null, "Studied at Abeda High School(+2) Muzaffarpur"), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("span", null, " Member of IEEE Jamia Millia Islamia")), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.toggleBio,
-        className: "btn-warning"
+        className: "btn btn-default"
       }, "read Less")) : /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.toggleBio,
-        className: "btn-primary"
+        className: " btn btn-default"
       }, "read More")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Projects.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_SocialProfiles.default, null));
     }
   }]);
@@ -30222,7 +30215,7 @@ var Search = /*#__PURE__*/function (_Component) {
         onChange: this.updateArtistQuery,
         onKeyPress: this.handleKeyPress,
         placeholder: "Type the artist's name"
-      }), "\xA0", /*#__PURE__*/_react.default.createElement("button", {
+      }), /*#__PURE__*/_react.default.createElement("button", {
         onClick: this.searchArtist,
         className: "btn btn-default"
       }, "Search"));
@@ -30477,6 +30470,8 @@ var _createBrowserHistory = _interopRequireDefault(require("history/createBrowse
 
 var _musicMaster = _interopRequireDefault(require("./projects/music-master"));
 
+var _Todo_App = _interopRequireDefault(require("./projects/Todo_App"));
+
 require("./index.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -30499,8 +30494,13 @@ _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_reactRouter
   render: function render() {
     return /*#__PURE__*/_react.default.createElement(_Header.default, null, /*#__PURE__*/_react.default.createElement(_musicMaster.default, null));
   }
+}), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  path: "/Todo_App",
+  render: function render() {
+    return /*#__PURE__*/_react.default.createElement(_Header.default, null, /*#__PURE__*/_react.default.createElement(_Todo_App.default, null));
+  }
 }))), document.getElementById('root'));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/App":"components/App.js","./components/Jokes":"components/Jokes.js","./components/Header":"components/Header.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","history/createBrowserHistory":"../node_modules/history/createBrowserHistory.js","./projects/music-master":"projects/music-master/index.js","./index.css":"index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/App":"components/App.js","./components/Jokes":"components/Jokes.js","./components/Header":"components/Header.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","history/createBrowserHistory":"../node_modules/history/createBrowserHistory.js","./projects/music-master":"projects/music-master/index.js","./projects/Todo_App":"projects/Todo_App/index.html","./index.css":"index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -30528,7 +30528,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40365" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46621" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -30704,5 +30704,96 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}],"../node_modules/parcel-bundler/src/builtins/bundle-loader.js":[function(require,module,exports) {
+var getBundleURL = require('./bundle-url').getBundleURL;
+
+function loadBundlesLazy(bundles) {
+  if (!Array.isArray(bundles)) {
+    bundles = [bundles];
+  }
+
+  var id = bundles[bundles.length - 1];
+
+  try {
+    return Promise.resolve(require(id));
+  } catch (err) {
+    if (err.code === 'MODULE_NOT_FOUND') {
+      return new LazyPromise(function (resolve, reject) {
+        loadBundles(bundles.slice(0, -1)).then(function () {
+          return require(id);
+        }).then(resolve, reject);
+      });
+    }
+
+    throw err;
+  }
+}
+
+function loadBundles(bundles) {
+  return Promise.all(bundles.map(loadBundle));
+}
+
+var bundleLoaders = {};
+
+function registerBundleLoader(type, loader) {
+  bundleLoaders[type] = loader;
+}
+
+module.exports = exports = loadBundlesLazy;
+exports.load = loadBundles;
+exports.register = registerBundleLoader;
+var bundles = {};
+
+function loadBundle(bundle) {
+  var id;
+
+  if (Array.isArray(bundle)) {
+    id = bundle[1];
+    bundle = bundle[0];
+  }
+
+  if (bundles[bundle]) {
+    return bundles[bundle];
+  }
+
+  var type = (bundle.substring(bundle.lastIndexOf('.') + 1, bundle.length) || bundle).toLowerCase();
+  var bundleLoader = bundleLoaders[type];
+
+  if (bundleLoader) {
+    return bundles[bundle] = bundleLoader(getBundleURL() + bundle).then(function (resolved) {
+      if (resolved) {
+        module.bundle.register(id, resolved);
+      }
+
+      return resolved;
+    }).catch(function (e) {
+      delete bundles[bundle];
+      throw e;
+    });
+  }
+}
+
+function LazyPromise(executor) {
+  this.executor = executor;
+  this.promise = null;
+}
+
+LazyPromise.prototype.then = function (onSuccess, onError) {
+  if (this.promise === null) this.promise = new Promise(this.executor);
+  return this.promise.then(onSuccess, onError);
+};
+
+LazyPromise.prototype.catch = function (onError) {
+  if (this.promise === null) this.promise = new Promise(this.executor);
+  return this.promise.catch(onError);
+};
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/loaders/browser/html-loader.js":[function(require,module,exports) {
+module.exports = function loadHTMLBundle(bundle) {
+  return fetch(bundle).then(function (res) {
+    return res.text();
+  });
+};
+},{}],0:[function(require,module,exports) {
+var b=require("../node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("html",require("../node_modules/parcel-bundler/src/builtins/loaders/browser/html-loader.js"));b.load([["Todo_App.979ce70d.html","projects/Todo_App/index.html"]]).then(function(){require("index.js");});
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
 //# sourceMappingURL=/src.e31bb0bc.js.map

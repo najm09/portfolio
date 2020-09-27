@@ -9,7 +9,7 @@ const Project = props => {
       <h3>{title}</h3>
       <img src = {image} alt = "profile" style = {{width: 200, height:120}}/>
       <p>{description}</p>
-      <a href = {link} target = "blank">{link}</a>
+      <div style={{marginRight:10, fontSize:10, fontWeight:'bold'}}><a href = {link} target = "blank" >{link}</a></div>
     </div>
     )
   }
