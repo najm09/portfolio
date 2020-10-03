@@ -6,7 +6,6 @@ import Header from './components/Header';
 import {Router, Switch, Route} from 'react-router-dom'
 import createBrowserHistory from 'history/createBrowserHistory';
 import MusicMaster from './projects/music-master';
-import TodoTracker from './projects/Todo_App';
 
 import './index.css';
 

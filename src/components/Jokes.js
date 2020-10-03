@@ -1,4 +1,5 @@
 import React,  {Component} from 'react';
+import './jokes.css'
 
 const Joke = ({joke}) =>{
   const {setup, punchline} = joke;
@@ -21,19 +22,19 @@ class Jokes extends Component{
     .then(response => response.json())
     .then(json => this.setState({jokes: json}))
     .catch(error => alert(error.message));
+    document.getElementById("btn").innerHTML = "Refresh";
   }
 
   render(){ 
     return(
       <div>
-        <div>
-          <pre className='bg bg-primary'><h1>Highlighted jokes</h1></pre>
-          <br/>
+        <div className='box'>
+          <h3 className="title">Highlighted jokes@appspot</h3>
           <Joke joke = {this.state.joke}/>
-          <h2>Want more jokes  <button onClick = {this.fetchJokes}
-          className=' glyphicon glyphicon-search btn btn-info'></button></h2>
-          {this.state.jokes.map(joke =>(<Joke key = {joke.id} joke = {joke}/>))}
+          <button onClick = {this.fetchJokes} className="btn" id="btn">More Jokes</button>
+          {this.state.jokes.map(joke =>(<Joke key = {joke.id} joke = {joke} />))}
         </div>
+        <span className="dev">Developed by Fakhra Najm@2020</span>
       </div>
     ) 
   }

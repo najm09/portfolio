@@ -1,0 +1,21 @@
+.box{
+  padding: 10px;
+  display: flexbox;
+  width: auto;
+  background-color: #cfd8dc;
+  border-radius: 25px;
+  align-items: center;
+}
+.btn{
+  color: blue;
+}
+.title{
+  text-decoration: underline;
+  color: blue;
+}
+.dev{
+  position: relative;
+  margin-top: 300px;
+  font-size: 10px;
+  color: grey;
+}
