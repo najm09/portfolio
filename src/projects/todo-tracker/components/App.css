@@ -1,0 +1,57 @@
+
+.Body{
+  margin-left: 400px;
+  padding: 12px;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.header{
+  font-size: 35px;
+  text-emphasis: none;
+  text-decoration: underline;
+  color: gray;
+  text-align: center;
+  margin: 30px;
+}
+
+#title{
+  padding-top: 30px;
+  color: gray;
+  text-align: center;
+  font-size: 25px;
+}
+
+input {
+  font-size: 20px;
+  width: 300px;
+  height:30px;
+  margin: 10px;
+}
+
+button{
+  background-color: #37474f;
+  margin: 1px;
+  color: white;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+#todolist{
+
+  align-content: space-around;
+  list-style: none;
+  text-align: center;
+  max-width: 500px;
+}
+
+li{
+  background-color: #37474f;
+  display: inline-block;
+  color: white;
+  width: fit-content;
+  padding: 15px;
+  margin-right:8px ;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
