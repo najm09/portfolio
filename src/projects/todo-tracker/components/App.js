@@ -39,6 +39,9 @@ class App extends Component {
       document.getElementById("todolist").removeChild(document.getElementById("todolist").firstChild)
     document.getElementById("title").innerHTML = ""
   }
+  removeTodo = () => {
+
+  }
   render() {
     return (
       <div className="Body">

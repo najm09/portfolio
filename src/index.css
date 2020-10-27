@@ -10,7 +10,8 @@
 }
 
 body{
-  text-align: center;
+  background-color: black;
+  color: white;
   font-size: 20px;
   padding: 2.5%;
 }
@@ -18,22 +19,31 @@ body{
 h1, h2, h3, h4, h5{
   font-family: 'aerial';
 }
+
 .profile{
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  float: left;
 }
 
 .title-fade-in{
   opacity: 100;
+  font-size: x-large;
   animation-name: fade-in;
+  font-weight: bolder;
   animation-duration: 2s;
+  color: #425997;
+  
 }
 
 .title-fade-out{
   opacity: 0;
+  font-size: x-large;
   animation-name: fade-out;
   animation-duration: 2s;
+  font-weight: bolder;
+  color: #083d34;
 }
 
 @keyframes fade-in{
