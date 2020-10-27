@@ -1,53 +1,43 @@
-import React, {Component} from "react";
-import Project from './Projects';
+import React, { Component } from "react"
 import SocialProfiles from './SocialProfiles';
 import Title from './Title';
 import profile from '../assets/profile.png'
 
 class App extends Component {
-  state = {displayBio: false};
-  // constructor(){
-  //   super(); // reference to the root component class
-  //   // state is an updatable structure which contains data of the component class.
-  //   this.state = {displayBio : false}; 
-  //   this.toggleBio = this.toggleBio.bind(this);
-  // }
-  toggleBio = () => {
-    this.setState({displayBio: ! this.state.displayBio});
+  style = {
+    marginTop: 15,
+    minwidth: '100%',
+    height: '100%',
+    display: 'inline-block',
+    padding: 30,
+    borderRadius: 15,
   }
-  render(){
+
+  render() {
     return (
       <div>
-        <img src = {profile} alt = 'profile' className = "profile" />
-        <h1>Fakhra Najm</h1>
-        <Title/>
-        <p>Department of Electrical Engineering</p>
-        <p>Faculty of Engineering and Technology</p>
-        <p>Jamia Millia Islamia New Delhi </p>
-        {
-          this.state.displayBio ?( 
+        <div style={this.style}>
+          <img src={profile} alt='profile' className="profile" />
+          <h1>Fakhra Najm</h1>
+          <br/>
           <div>
-            <p>BirthPlace: Muzaffarpur Bihar</p>
-            <p>Studied at Hazrat Ali Academy</p>
-            <p>Studied at Abeda High School(+2) Muzaffarpur</p>
-            <p>
-              <span> Member of IEEE Jamia Millia Islamia</span>
-            </p>
-            <button onClick={this.toggleBio} className = "btn btn-default">read Less</button>
-          </div> ):
-          (
-          <div>
-            <button onClick={this.toggleBio} className = " btn btn-default">read More</button>
+            <Title />
+            <p>Department of Electrical Engineering</p>
+            <p>Faculty of Engineering and Technology</p>
+            <p>Jamia Millia Islamia New Delhi </p>
           </div>
-          )
-        }
-        <hr/>
-        <Project/>
-        <hr/>
-        <SocialProfiles/>
+          <table  
+          cellpadding="5" 
+          cellspacing="5" 
+          style={{borderRadius:15,display:'flex',alignItems:"center",flexDirection:"column"}}>
+            <tr>
+              <SocialProfiles />
+            </tr>
+          </table>
+        </div>
       </div>
     )
-  }  
+  }
 }
 
 export default App;

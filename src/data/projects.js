@@ -6,20 +6,22 @@
 import Cup from '../assets/cup.png';
 import Todo from '../assets/todoTracker.png';
 import Game from '../assets/Game.png';
+import Music from '../assets/music.png';
+
 
 const PROJECTS = [
   {
     id : 1,
     title: 'PerfectCup',
-    description: 'Simple Login Logout Php Web Application, involving JS and core webdev course!',
+    description: 'Login Logout Php App',
     link: 'https://github.com/najm09/perfectCup',
     image: Cup
   },
 
   {
     id : 2,
-    title: 'TodoTRacker',
-    description: 'A Web Application using Javascript to Track Todos!',
+    title: 'todo-tracker',
+    description: 'Todo tracker Application!',
     link: 'https://github.com/najm09/Javascript/tree/master/Todo_App',
     image: Todo
   },
@@ -30,6 +32,13 @@ const PROJECTS = [
     description: 'A Game of Matching Cards!',
     link: 'https://github.com/najm09/Javascript/tree/master/memoryGame',
     image: Game
+  },
+  {
+    id : 4,
+    title: 'Music-master',
+    description: 'A React Search Engine!',
+    link: 'https://github.com/najm09/music-master',
+    image: Music
   },
 ];
 

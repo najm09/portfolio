@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import SOCIAL_PROFILES from '../data/socialProfiles'
 
 const SocialProfile = props => {
@@ -6,14 +6,15 @@ const SocialProfile = props => {
   const {link, image} = props.socialProfile;
   return(
     <span>
-      <a href = {link}><img src = {image}  alt = 'my-profile' style = {{height:30 ,width:30, margin : 10}} /></a>
+      <a href = {link} target="blank">
+        <img src = {image}  alt = 'my-profile' style = {{height:30 ,width:30, marginTop: 30,margin:10}} />
+      </a>
     </span>
   )
 }
 
 const SocialProfiles = () =>(
   <div>
-    <h1>Connect with me!</h1>
     <div>
     {
     SOCIAL_PROFILES.map( SOCIAL_PROFILE => (
