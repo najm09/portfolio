@@ -28,11 +28,6 @@ const SOCIAL_PROFILES = [
     link: 'https://twitter.com/FakhraNajm',
     image: twitterIcon
   },
-  {
-    id: 5,
-    link: 'https://leetcode.com/najm09',
-    image: Leetcode
-  },
 ];
 
 export default SOCIAL_PROFILES;

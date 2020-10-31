@@ -27,22 +27,14 @@ class App extends Component {
             <p>Faculty of Engineering and Technology</p>
             <p>Jamia Millia Islamia New Delhi </p>
           </div>
-<<<<<<< HEAD
           <table
             cellpadding="6"
             cellspacing="6"
             style={{ borderRadius: 15, display: 'flex', alignItems: "center", flexDirection: "column",}}>
-=======
-          <table  
-          cellpadding="5" 
-          cellspacing="5" 
-          style={{borderRadius:15,display:'flex',alignItems:"center",flexDirection:"column"}}>
->>>>>>> 10f7697f4c92adf11a38fee81db6543a913bdcce
             <tr>
               <SocialProfiles />
             </tr>
           </table>
-<<<<<<< HEAD
           {/* <div>
             <iframe
               width="100%"
@@ -53,8 +45,6 @@ class App extends Component {
               marginBottom="0px">
             </iframe>
           </div> */}
-=======
->>>>>>> 10f7697f4c92adf11a38fee81db6543a913bdcce
         </div>
       </div>
     )
