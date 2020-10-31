@@ -2,6 +2,7 @@ import emailIcon from '../assets/email_icon.png';
 import githubIcon from '../assets/github_icon.png';
 import linkedinIcon from '../assets/linkedin_icon.png';
 import twitterIcon from '../assets/twitter_icon.png';
+import Leetcode from '../assets/leetcode.png'
 
 const SOCIAL_PROFILES = [
   {
@@ -26,6 +27,11 @@ const SOCIAL_PROFILES = [
     id : 4,
     link: 'https://twitter.com/FakhraNajm',
     image: twitterIcon
+  },
+  {
+    id: 5,
+    link: 'https://leetcode.com/najm09',
+    image: Leetcode
   },
 ];
 

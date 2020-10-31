@@ -30,8 +30,6 @@ class App extends Component {
       .catch(error => alert(error.message));
   }
 
-
-
   style = {
     color:color[Math.floor(Math.random()*color.length)],
     marginBottom: 20,

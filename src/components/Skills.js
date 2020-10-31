@@ -2,7 +2,7 @@ import React from 'react'
 import SKILLS from './../data/Skills'
 
 const Skill = props => {
-  const { name,image } = props.skill;
+  const { name } = props.skill;
   const color = ["#029FD4 ",'#DAA520','#66bb6a','#f48fb1','#795548','#ffb74d']
   
   const style = {
@@ -18,8 +18,8 @@ const Skill = props => {
 
   return (
     <div style={style}>
-      <div>
-        <img src = {image}  alt = 'skill' style = {{height:30 ,width:30, marginTop: 30,margin:10}} />
+      <div style={grid} id="grid" >
+        {name}
       </div>
     </div>
   )
