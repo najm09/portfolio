@@ -3,10 +3,10 @@ import SocialProfiles from './SocialProfiles';
 import Title from './Title';
 import profile from '../assets/profile.png'
 
-const Background = "https://images.wallpaperscraft.com/image/starry_sky_clouds_sunset_120716_2560x1080.jpg"
+// const Background = "https://images.wallpaperscraft.com/image/starry_sky_clouds_sunset_120716_2560x1080.jpg"
 class App extends Component {
   style = {
-    backgroundImage: `url(${Background})`,
+    // backgroundImage: `url(${Background})`,
     width: '100%',
     height: '450px',
     display: 'inline-block',
