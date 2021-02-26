@@ -1,9 +1,15 @@
 import React,  {Component} from 'react';
-import './jokes.css'
+// import './jokes.css'
 
 const Joke = ({joke}) =>{
+
   const {setup, punchline} = joke;
-  return <div className= 'panel panel-info'><h3>{setup}<em>{punchline}</em></h3></div>
+
+  return (
+    <div className = "alert alert-primary" role = "alert">
+      <h3 className = "p-2 bg-light ">{setup}{punchline}</h3>
+    </div>
+    )
 }
 
 class Jokes extends Component{
@@ -29,12 +35,12 @@ class Jokes extends Component{
     return(
       <div>
         <div className='box'>
-          <h3 className="title">Highlighted jokes@appspot</h3>
+          <h3 className="text-secondary">Highlighted jokes@appspot</h3>
           <Joke joke = {this.state.joke}/>
-          <button onClick = {this.fetchJokes} className="btn" id="btn">More Jokes</button>
+          <button onClick = {this.fetchJokes} className = "btn btn-link">More Jokes</button>
           {this.state.jokes.map(joke =>(<Joke key = {joke.id} joke = {joke} />))}
         </div>
-        <span className="dev">Developed by Fakhra Najm@2020</span>
+        <span className = "text-muted">Developed by Fakhra Najm@2020</span>
       </div>
     ) 
   }
