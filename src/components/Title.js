@@ -31,7 +31,7 @@ class Title extends Component{
     const link = Titles[titleIndex];
     return(
     <p className = {fadeIn ? 'title-fade-in' : 'title-fade-out'} >
-      <a href = {link}>Resume</a>
+      <a className = "resume-link" href = {link} target="blank">Resume</a>
     </p>
     )
   }

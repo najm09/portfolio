@@ -7,21 +7,19 @@ const SocialProfile = props => {
   return (
     <span>
       <a href={link} target="blank">
-      <img className="icons" src={image} alt='my-profile' />
+      <img src={image} alt='my-profile' className='icons-img'/>
       </a>
     </span>
   )
 }
 
 const SocialProfiles = () => (
-  <div>
-    <div>
+  <div className="icons">
       {
         SOCIAL_PROFILES.map(SOCIAL_PROFILE => (
           <SocialProfile key={SOCIAL_PROFILE.id} socialProfile={SOCIAL_PROFILE} />
         ))
       }
-    </div>
   </div>
 )
 

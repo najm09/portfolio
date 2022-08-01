@@ -1,60 +1,101 @@
 
 body{
+  box-sizing: border-box;
+  padding: 10%;
+  font-family: 'Courier New', Courier, monospace, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items : center;
-  text-align: center;
+  align-content: center;
+  align-tracks: center;
+  align-self: center;
+  overflow: hidden;
   overflow: "hidden";
 }
 
-.banner{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom : 0;
-  left : 0;
-  right : 0;
+p{
+  color: whitesmoke;
+  font-size: 20px !important;
+  font-weight: bold;
+  flex-direction: column;
+  margin-bottom: 10%;
 }
 
-.banner-elements{
-  position: relative;
-  overflow: "hidden";
+h1{
+  color: white;
+  position: relative ;
 }
 
-.About-me{
-  margin-top: 10%;
-  margin-left: 5%;
+h2, h3, h4, h5{
   position: relative;
-  padding: 100;
-  overflow: "hidden";
-}
-
-.skill-set{
-  position: relative;
-  display: inline-flex;
-  justify-content: space-evenly;
-  overflow: "hidden";
-}
-
-h1, h2, h3, h4, h5, a{
-  position: relative;
-  color: rgb(181, 50, 54);
-  font-family: 'aerial';
+  color: rgb(184, 178, 178);
   position:"relative"; 
   overflow: "hidden";
 }
 
-.icons{
-  display: inline-flex;
-  padding: 1vh;
-  flex-direction: row;;
-  height: 3%;
-  width: 3%;
-  border-radius: 10%;
+.resume-link{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0 !important;
+  bottom : 0 !important;
+  left : 0 !important;
+  right : 0 !important;
+}
+
+.banner-elements{
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: max-content;
   overflow: "hidden";
 }
 
+.About-me{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: "hidden";
+}
+
+.skill-set{
+  position: relative ;
+  padding : 10px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: "hidden";
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 0 !important;
+  /* margin-top: 30%; */
+  border-radius: 10%;
+  overflow: hidden;
+  position: fixed;
+}
+.icons-img {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+}
+a{
+  color: whitesmoke;
+}
+
 .title-fade-in{
+  color: whitesmoke;
   opacity: 100;
   font-size: x-large;
   animation-name: fade-in;
@@ -63,6 +104,7 @@ h1, h2, h3, h4, h5, a{
 }
 
 .title-fade-out{
+  color: whitesmoke;
   opacity: 0;
   font-size: x-large;
   animation-name: fade-out;
