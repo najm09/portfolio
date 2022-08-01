@@ -17,7 +17,7 @@ const Project = props => {
       <div>
         <h3>{title}</h3>
         <a href={link} target="blank">
-          <img src={image} alt="profile" style={{ width: 200, height: 200, borderRadius: 7 }} />
+          <img src={image} alt="profile" style={{ width: 300, height: 300, borderRadius: 7 }} />
         </a>
         <div style={{ textAlign: 'center' }}>{description}</div>
       </div>

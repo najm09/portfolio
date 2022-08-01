@@ -1,8 +1,8 @@
-import emailIcon from '../assets/email_icon.png';
-import githubIcon from '../assets/github_icon.png';
-import linkedinIcon from '../assets/linkedin_icon.png';
-import twitterIcon from '../assets/twitter_icon.png';
-import Leetcode from '../assets/leetcode.png'
+import emailIcon from '../../assets/email_icon.png';
+import githubIcon from '../../assets/github_icon.png';
+import linkedinIcon from '../../assets/linkedin_icon.png';
+import twitterIcon from '../../assets/twitter_icon.png';
+import Leetcode from '../../assets/leetcode.png'
 
 const SOCIAL_PROFILES = [
   {
@@ -19,14 +19,20 @@ const SOCIAL_PROFILES = [
 
   {
     id : 3,
-    link: 'https://www.linkedin.com/in/fakhra-najm-6551a51b3/',
+    link: 'https://www.linkedin.com/in/najm09/',
     image: linkedinIcon
   },
 
   {
     id : 4,
-    link: 'https://twitter.com/FakhraNajm',
+    link: 'https://twitter.com/fnajm09',
     image: twitterIcon
+  },
+
+  {
+    id : 5,
+    link: 'https://leetcode.com/najm09',
+    image: Leetcode
   },
 ];
 

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
+import About from '../data/about'
 
 const Titles = [
-  'najm09',
-  'fnajm09@gmail.com'
+  About[0].Resume
 ]
 
 class Title extends Component{
@@ -28,10 +28,10 @@ class Title extends Component{
 
   render(){
     const {fadeIn, titleIndex} = this.state;
-    const title = Titles[titleIndex];
+    const link = Titles[titleIndex];
     return(
     <p className = {fadeIn ? 'title-fade-in' : 'title-fade-out'} >
-      <div>{title}</div>
+      <a href = {link}>Resume</a>
     </p>
     )
   }

@@ -3,10 +3,10 @@
   * Email : fnajm09@gmail.com
 */
 
-import Cup from '../assets/cup.png';
-import Todo from '../assets/todoTracker.png';
-import Game from '../assets/Game.png';
-import Music from '../assets/music.png';
+// import Cup from '../../assets/cup.png'
+// import Todo from '../../assets/todoTracker.png';
+// import Game from '../../assets/Game.png';
+// import Music from '../../assets/music.png';
 
 
 const PROJECTS = [
@@ -15,7 +15,7 @@ const PROJECTS = [
     title: 'PerfectCup',
     description: 'Login Logout Php App',
     link: 'https://github.com/najm09/perfectCup',
-    image: Cup
+    // image: Cup
   },
 
   {
@@ -23,7 +23,7 @@ const PROJECTS = [
     title: 'todo-tracker',
     description: 'Todo tracker Application!',
     link: 'https://github.com/najm09/Javascript/tree/master/Todo_App',
-    image: Todo
+    // image: Todo
   },
 
   {
@@ -31,14 +31,14 @@ const PROJECTS = [
     title: 'MemoryGame',
     description: 'A Game of Matching Cards!',
     link: 'https://github.com/najm09/Javascript/tree/master/memoryGame',
-    image: Game
+    // image: Game
   },
   {
     id : 4,
     title: 'Music-master',
     description: 'A React Search Engine!',
     link: 'https://github.com/najm09/music-master',
-    image: Music
+    // image: Music
   },
 ];
 

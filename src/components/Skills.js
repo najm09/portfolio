@@ -1,37 +1,43 @@
 import React from 'react'
 import SKILLS from './../data/Skills'
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { Table, TableCell, TableRow } from '@mui/material';
 
 const Skill = props => {
-  const { name } = props.skill;
-  const color = ["#029FD4 ",'#DAA520','#66bb6a','#f48fb1','#795548','#ffb74d']
-  
-  const style = {
-    display: 'inline-block',
-    margin: 12,
-    borderRadius: 5
-  }
-  const grid = {
-    backgroundColor: color[Math.floor(Math.random() * color.length)],
-    padding: 10,
-    borderRadius: 10,
-  }
-
+  const [hover, setHover] = React.useState({})
+  const { image } = props.skill;
   return (
-    <div style={style}>
-      <div style={grid} id="grid" >
-        {name}
-      </div>
+    <div className='skill-set'>
+      <Table>
+        <TableCell>
+          <CardMedia
+            onMouseEnter={() => { setHover({ [image]: true }) }}
+            onMouseLeave={() => { setHover({ [image]: false }) }}
+            style={{ width: hover[image] ? 120 : 80, height: hover[image] ? 120 : 80 }}
+            component="img"
+            alt="Skill"
+            image={image}
+          />
+        </TableCell>
+      </Table>
     </div>
   )
 }
 
 const Skills = () => (
-  <div>
-    {
-      SKILLS.map(SKILL => (
-        <Skill key={SKILL.id} skill={SKILL}></Skill>
+  <div >
+    <Table>
+      {SKILLS.map(SKILL => (
+
+        <TableCell>
+          <Skill key={SKILL.id} skill={SKILL}></Skill>
+        </TableCell>
       ))
-    }
+      }
+    </Table>
   </div>
 )
 
